@@ -1,0 +1,94 @@
+$fuente-primaria: Oxygen, sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+$line-height: 1.8rem;
+$color-texto: #666;
+$color-light: #f4f4f4;
+$color-dark: #282e34;
+$bk1: 568px;
+$bk2: 768px;
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: $font-size;
+  font-family: $fuente-primaria;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color-texto;
+}
+
+.img1,
+.img2,
+.img3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $bk1) {
+    background-attachment: scroll;
+  }
+}
+
+.img2,
+.img3 {
+  min-height: 50rem;
+}
+
+.img1 {
+  background-image: url('../img/img1.jpeg');
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url('../img/img2.jpg');
+}
+
+.img3 {
+  background-image: url('../img/img3.jpeg');
+}
+
+.seccion {
+  text-align: center;
+  @media screen and (min-width: $bk2) {
+    padding: 3.125rem 5rem;
+  }
+  @media screen and (max-width: $bk2 - 1) {
+    padding: 2rem;
+  }
+
+  &__texto {
+    text-align: left;
+  }
+
+  &__blanco {
+    background-color: $color-light;
+  }
+
+  &__negro {
+    background-color: $color-dark;
+    color: $color-light;
+  }
+}
+
+.img__texto {
+  @media screen and (min-width: $bk2) {
+    font-size: 1.688rem;
+  }
+  @media screen and (max-width: $bk1) {
+    font-size: 1.3rem;
+  }
+  text-transform: uppercase;
+}
+
+.borde {
+  background-color: rgba($color-dark, .8);
+  color: $color-light;
+  padding: 1.3rem;
+  border-radius: 5px;
+}
