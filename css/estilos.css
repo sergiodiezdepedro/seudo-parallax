@@ -27,7 +27,7 @@ html {
 
 .img2,
 .img3 {
-  min-height: 50rem; }
+  min-height: 30rem; }
 
 .img1 {
   background-image: url("../img/img1.jpeg");
@@ -59,7 +59,8 @@ html {
   text-transform: uppercase; }
   @media screen and (min-width: 768px) {
     .img__texto {
-      font-size: 1.688rem; } }
+      font-size: 1.688rem;
+      letter-spacing: 8px; } }
   @media screen and (max-width: 568px) {
     .img__texto {
       font-size: 1.3rem; } }

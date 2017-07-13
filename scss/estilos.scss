@@ -37,7 +37,7 @@ html {
 
 .img2,
 .img3 {
-  min-height: 50rem;
+  min-height: 30rem;
 }
 
 .img1 {
@@ -79,6 +79,7 @@ html {
 .img__texto {
   @media screen and (min-width: $bk2) {
     font-size: 1.688rem;
+    letter-spacing: 8px;
   }
   @media screen and (max-width: $bk1) {
     font-size: 1.3rem;
